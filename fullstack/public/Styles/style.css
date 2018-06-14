@@ -1,0 +1,22 @@
+h1{
+     background-color: lightblue;
+}
+iframe{
+    color:lightcoral;
+    width: 500px;
+    height: 100px;
+    background: lightblue;
+    border:darkblue;
+}
+th
+{
+    background-color: darkgray;
+    color: darkblue;
+    height: 30px;
+    width: 130px;
+}
+td
+{color:black;
+height: 30px;
+    width: 130px;
+    }
