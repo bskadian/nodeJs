@@ -18,7 +18,7 @@ companies.find({name:{$regex:request.params.pattern,$options:'i'}},{_id:0,name:1
 function(err,data){
     if(err)   
     response.json([]);
-    if(data.lenth>=50)
+    if(data.length>=50)
     emitter.emit("more",data.length);
     response.json(data);
 })

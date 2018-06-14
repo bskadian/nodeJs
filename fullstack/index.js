@@ -62,11 +62,16 @@ app.use("/dbroutes",dbroutes);
 
 app.use(express.static(__dirname+'/public/styles'));
 app.use(express.static(__dirname+"/bower_components"));
+app.use(express.static(__dirname+'/public/amodule'));
 app.get('/home',function(request,response){
     console.log("inside");
     response.sendFile(__dirname+"/public/views/index.html");
    
-})
+});
+
+app.get("/restclient",function(request, response){
+    response.sendFile(__dirname+"/public/views/angular.html")
+});
 
 /*
 app.post("/store",function(request,response){
