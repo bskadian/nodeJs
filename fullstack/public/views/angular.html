@@ -13,7 +13,7 @@ Search a Company
 <input type="text" ng-model="pattern" ng-change="readpattern()">
 <div class="jumbotron">
 <ul>
-    <li ng-repeat=" x in companies">{{x}}</li>
+    <li ng-repeat=" x in companies">{{x.name}}</li>
 </ul>
 
 </div>
